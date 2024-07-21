@@ -4,7 +4,7 @@ Implementing Geospatial Indexing in Spring Boot Using Redis Geohash
 
 ## Read this article on Medium
 
-[Medium Article](https://medium.com)
+[Medium Article](https://medium.com/@htyesilyurt/implementing-geospatial-indexing-in-spring-boot-using-redis-geohash-bd7b2b77e4d4)
 
 ## Geospatial Indexing Example
 
