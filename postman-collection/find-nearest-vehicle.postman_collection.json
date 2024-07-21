@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "56f9b7a0-4d3c-496a-b3af-a0ecb6c89bdf",
+		"name": "find-nearest-vehicle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8163916"
+	},
+	"item": [
+		{
+			"name": "Add vehicle location",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"vehicleName\" : \"X Taxi Station\",\n    \"latitude\" : \"40.95068101667577\",\n    \"longitude\": \"29.12719414971017\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1905/v1/api/vehicles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1905",
+					"path": [
+						"v1",
+						"api",
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find nearest vehicle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1905/v1/api/vehicles/nearest?latitude=40.96366196485215&longitude=29.066099435699908&km=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1905",
+					"path": [
+						"v1",
+						"api",
+						"vehicles",
+						"nearest"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "40.96366196485215"
+						},
+						{
+							"key": "longitude",
+							"value": "29.066099435699908"
+						},
+						{
+							"key": "km",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
